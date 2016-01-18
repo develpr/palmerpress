@@ -1,4 +1,4 @@
-# Physica API #
+# Palmer Press
 
 ##Installing Dev Environment
 
