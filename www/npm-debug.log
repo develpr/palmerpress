@@ -1,0 +1,239 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'gulp' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 warn package.json gulp@3.9.0 No README data
+6 warn package.json bootstrap-sass@3.3.6 No README data
+7 warn package.json laravel-elixir@4.2.0 No README data
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'gulp', null ]
+10 verbose cache add name=undefined spec="gulp" args=["gulp",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'gulp',
+11 verbose parsed url   path: 'gulp',
+11 verbose parsed url   href: 'gulp' }
+12 silly lockFile 9750c68d-gulp gulp
+13 verbose lock gulp /root/.npm/9750c68d-gulp.lock
+14 silly lockFile 9750c68d-gulp gulp
+15 silly lockFile 9750c68d-gulp gulp
+16 verbose addNamed [ 'gulp', '' ]
+17 verbose addNamed [ null, '*' ]
+18 silly lockFile 72f4391e-gulp gulp@
+19 verbose lock gulp@ /root/.npm/72f4391e-gulp.lock
+20 silly addNameRange { name: 'gulp', range: '*', hasData: false }
+21 verbose request where is /gulp
+22 verbose request registry https://registry.npmjs.org/
+23 verbose request id fe5a6d6f7fe40b0f
+24 verbose url raw /gulp
+25 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+26 verbose url resolved https://registry.npmjs.org/gulp
+27 verbose request where is https://registry.npmjs.org/gulp
+28 info trying registry request attempt 1 at 18:22:56
+29 verbose etag "5A0FRNP2ZS8GKE59P6GL0VOEN"
+30 http GET https://registry.npmjs.org/gulp
+31 http 304 https://registry.npmjs.org/gulp
+32 silly registry.get cb [ 304,
+32 silly registry.get   { date: 'Mon, 18 Jan 2016 18:22:56 GMT',
+32 silly registry.get     via: '1.1 varnish',
+32 silly registry.get     'cache-control': 'max-age=300',
+32 silly registry.get     etag: '"5A0FRNP2ZS8GKE59P6GL0VOEN"',
+32 silly registry.get     age: '65',
+32 silly registry.get     connection: 'keep-alive',
+32 silly registry.get     'x-served-by': 'cache-dfw1832-DFW',
+32 silly registry.get     'x-cache': 'HIT',
+32 silly registry.get     'x-cache-hits': '2',
+32 silly registry.get     'x-timer': 'S1453141376.200960,VS0,VE0',
+32 silly registry.get     vary: 'Accept' } ]
+33 verbose etag https://registry.npmjs.org/gulp from cache
+34 silly addNameRange number 2 { name: 'gulp', range: '*', hasData: true }
+35 silly addNameRange versions [ 'gulp',
+35 silly addNameRange   [ '0.0.1',
+35 silly addNameRange     '0.0.2',
+35 silly addNameRange     '0.0.3',
+35 silly addNameRange     '0.0.4',
+35 silly addNameRange     '0.0.5',
+35 silly addNameRange     '0.0.7',
+35 silly addNameRange     '0.0.8',
+35 silly addNameRange     '0.0.9',
+35 silly addNameRange     '0.1.0',
+35 silly addNameRange     '0.2.0',
+35 silly addNameRange     '1.0.0',
+35 silly addNameRange     '1.1.0',
+35 silly addNameRange     '1.2.0',
+35 silly addNameRange     '1.2.1',
+35 silly addNameRange     '2.0.0',
+35 silly addNameRange     '2.0.1',
+35 silly addNameRange     '2.1.0',
+35 silly addNameRange     '2.2.0',
+35 silly addNameRange     '2.3.0',
+35 silly addNameRange     '2.4.0',
+35 silly addNameRange     '2.4.1',
+35 silly addNameRange     '2.6.0',
+35 silly addNameRange     '2.6.1',
+35 silly addNameRange     '2.7.0',
+35 silly addNameRange     '3.0.0',
+35 silly addNameRange     '3.1.1',
+35 silly addNameRange     '3.1.2',
+35 silly addNameRange     '3.1.3',
+35 silly addNameRange     '3.1.4',
+35 silly addNameRange     '3.2.0',
+35 silly addNameRange     '3.2.1',
+35 silly addNameRange     '3.2.2',
+35 silly addNameRange     '3.2.3',
+35 silly addNameRange     '3.2.4',
+35 silly addNameRange     '3.2.5',
+35 silly addNameRange     '3.3.0',
+35 silly addNameRange     '3.3.1',
+35 silly addNameRange     '3.3.2',
+35 silly addNameRange     '3.3.4',
+35 silly addNameRange     '3.4.0',
+35 silly addNameRange     '3.5.0',
+35 silly addNameRange     '3.5.1',
+35 silly addNameRange     '3.5.2',
+35 silly addNameRange     '3.5.5',
+35 silly addNameRange     '3.5.6',
+35 silly addNameRange     '3.6.0',
+35 silly addNameRange     '3.6.1',
+35 silly addNameRange     '3.6.2',
+35 silly addNameRange     '3.7.0',
+35 silly addNameRange     '3.8.0',
+35 silly addNameRange     '3.8.1',
+35 silly addNameRange     '3.8.2',
+35 silly addNameRange     '3.8.3',
+35 silly addNameRange     '3.8.4',
+35 silly addNameRange     '3.8.5',
+35 silly addNameRange     '3.8.6',
+35 silly addNameRange     '3.8.7',
+35 silly addNameRange     '3.8.8',
+35 silly addNameRange     '3.8.9',
+35 silly addNameRange     '3.8.10',
+35 silly addNameRange     '3.8.11',
+35 silly addNameRange     '3.9.0' ] ]
+36 verbose addNamed [ 'gulp', '3.9.0' ]
+37 verbose addNamed [ '3.9.0', '3.9.0' ]
+38 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
+39 verbose lock gulp@3.9.0 /root/.npm/c2697a61-gulp-3-9-0.lock
+40 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
+41 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
+42 silly lockFile 72f4391e-gulp gulp@
+43 silly lockFile 72f4391e-gulp gulp@
+44 silly resolved [ { name: 'gulp',
+44 silly resolved     description: 'The streaming build system',
+44 silly resolved     version: '3.9.0',
+44 silly resolved     homepage: 'http://gulpjs.com',
+44 silly resolved     repository: { type: 'git', url: 'git+https://github.com/gulpjs/gulp.git' },
+44 silly resolved     author:
+44 silly resolved      { name: 'Fractal',
+44 silly resolved        email: 'contact@wearefractal.com',
+44 silly resolved        url: 'http://wearefractal.com/' },
+44 silly resolved     tags: [ 'build', 'stream', 'system', 'make', 'tool', 'asset', 'pipeline' ],
+44 silly resolved     files: [ 'index.js', 'lib', 'bin', 'completion' ],
+44 silly resolved     bin: { gulp: './bin/gulp.js' },
+44 silly resolved     man: [ 'gulp.1' ],
+44 silly resolved     dependencies:
+44 silly resolved      { archy: '^1.0.0',
+44 silly resolved        chalk: '^1.0.0',
+44 silly resolved        deprecated: '^0.0.1',
+44 silly resolved        'gulp-util': '^3.0.0',
+44 silly resolved        interpret: '^0.6.2',
+44 silly resolved        liftoff: '^2.1.0',
+44 silly resolved        minimist: '^1.1.0',
+44 silly resolved        orchestrator: '^0.3.0',
+44 silly resolved        'pretty-hrtime': '^1.0.0',
+44 silly resolved        semver: '^4.1.0',
+44 silly resolved        tildify: '^1.0.0',
+44 silly resolved        v8flags: '^2.0.2',
+44 silly resolved        'vinyl-fs': '^0.3.0' },
+44 silly resolved     devDependencies:
+44 silly resolved      { coveralls: '^2.7.0',
+44 silly resolved        'graceful-fs': '^3.0.0',
+44 silly resolved        istanbul: '^0.3.0',
+44 silly resolved        jscs: '~1.12.0',
+44 silly resolved        jshint: '^2.5.0',
+44 silly resolved        'jshint-stylish': '^1.0.0',
+44 silly resolved        'marked-man': '^0.1.3',
+44 silly resolved        mkdirp: '^0.5.0',
+44 silly resolved        mocha: '^2.0.1',
+44 silly resolved        'mocha-lcov-reporter': '^0.0.1',
+44 silly resolved        q: '^1.0.0',
+44 silly resolved        rimraf: '^2.2.5',
+44 silly resolved        should: '^5.0.1' },
+44 silly resolved     scripts:
+44 silly resolved      { prepublish: 'marked-man --name gulp docs/CLI.md > gulp.1',
+44 silly resolved        lint: 'jshint lib bin test index.js --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules && jscs lib bin test index.js',
+44 silly resolved        test: 'npm run-script lint && mocha --reporter spec',
+44 silly resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+44 silly resolved     engines: { node: '>= 0.9' },
+44 silly resolved     license: 'MIT',
+44 silly resolved     gitHead: '657213a52d5e9c19b85df6a42f76341a98c08ae8',
+44 silly resolved     bugs: { url: 'https://github.com/gulpjs/gulp/issues' },
+44 silly resolved     _id: 'gulp@3.9.0',
+44 silly resolved     _shasum: 'cf1fba4cb558bb8c6ae6c9613f583ae2620d214a',
+44 silly resolved     _from: 'gulp@',
+44 silly resolved     _npmVersion: '2.8.3',
+44 silly resolved     _nodeVersion: '0.10.36',
+44 silly resolved     _npmUser: { name: 'phated', email: 'blaine@iceddev.com' },
+44 silly resolved     maintainers: [ [Object], [Object] ],
+44 silly resolved     dist:
+44 silly resolved      { shasum: 'cf1fba4cb558bb8c6ae6c9613f583ae2620d214a',
+44 silly resolved        tarball: 'http://registry.npmjs.org/gulp/-/gulp-3.9.0.tgz' },
+44 silly resolved     directories: {},
+44 silly resolved     _resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.9.0.tgz',
+44 silly resolved     readme: 'ERROR: No README data found!' } ]
+45 info install gulp@3.9.0 into /var/www
+46 info installOne gulp@3.9.0
+47 verbose node_modules/gulp unbuild
+48 info preuninstall gulp@3.9.0
+49 info uninstall gulp@3.9.0
+50 verbose true,/var/www/node_modules,/var/www/node_modules unbuild gulp@3.9.0
+51 verbose /var/www/node_modules/.bin,[object Object] binRoot
+52 info postuninstall gulp@3.9.0
+53 verbose tar unpack /root/.npm/gulp/3.9.0/package.tgz
+54 silly lockFile 00455883-tar-var-www-node-modules-gulp tar:///var/www/node_modules/gulp
+55 verbose lock tar:///var/www/node_modules/gulp /root/.npm/00455883-tar-var-www-node-modules-gulp.lock
+56 silly lockFile 7baa2257--root-npm-gulp-3-9-0-package-tgz tar:///root/.npm/gulp/3.9.0/package.tgz
+57 verbose lock tar:///root/.npm/gulp/3.9.0/package.tgz /root/.npm/7baa2257--root-npm-gulp-3-9-0-package-tgz.lock
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm extractEntry README.md
+61 silly gunzTarPerm extractEntry LICENSE
+62 error Error: EPERM, chown '/var/www/node_modules/gulp/package.json'
+62 error  { [Error: EPERM, chown '/var/www/node_modules/gulp/package.json']
+62 error   errno: 50,
+62 error   code: 'EPERM',
+62 error   path: '/var/www/node_modules/gulp/package.json',
+62 error   fstream_finish_call: 'chown',
+62 error   fstream_type: 'File',
+62 error   fstream_path: '/var/www/node_modules/gulp/package.json',
+62 error   fstream_class: 'FileWriter',
+62 error   fstream_stack:
+62 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/writer.js:308:19',
+62 error      '/usr/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:143:7',
+62 error      'Object.oncomplete (evalmachine.<anonymous>:108:15)' ] }
+63 error Please try running this command again as root/Administrator.
+64 error System Linux 3.13.0-74-generic
+65 error command "/usr/bin/node" "/usr/bin/npm" "install" "gulp"
+66 error cwd /var/www
+67 error node -v v0.10.37
+68 error npm -v 1.4.28
+69 error path /var/www/node_modules/gulp/package.json
+70 error fstream_path /var/www/node_modules/gulp/package.json
+71 error fstream_type File
+72 error fstream_class FileWriter
+73 error fstream_finish_call chown
+74 error code EPERM
+75 error errno 50
+76 error stack Error: EPERM, chown '/var/www/node_modules/gulp/package.json'
+77 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/writer.js:308:19
+77 error fstream_stack /usr/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:143:7
+77 error fstream_stack Object.oncomplete (evalmachine.<anonymous>:108:15)
+78 verbose exit [ 50, true ]
