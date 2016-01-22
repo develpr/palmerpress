@@ -1,0 +1,25 @@
+{
+  "name": "Palmer Press",
+  "version": "1.0.0",
+  "authors": [
+    "Kevin Mitchell <kevin@develpr.com>"
+  ],
+  "description": "Styles and scripts for palmerpress",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://www.github.com/develpr/palmerpress",
+  "dependencies": {
+    "foundation-sites": "~6.0.0",
+    "motion-ui": "~1.1.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "dropzone": "~4.2.0"
+  }
+}

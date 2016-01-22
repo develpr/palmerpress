@@ -1,0 +1,115 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+.title-bar{
+    z-index:1000;
+    position:relative;
+}
+.top-bar{
+    position:fixed;
+    z-index:100;
+    background:rgba(0, 0, 0, .45);
+    border-bottom:1px solid #ffffff;
+    width:100%;
+    font-weight:200;
+    @include breakpoint(small down){
+      background:rgba(0, 0, 0, .7);
+    }
+}
+
+.hero{
+    width:100%; 
+    position:fixed; 
+    top:0; 
+    left:0; 
+    z-index:1;
+}
+
+.hero video{
+    width:100%;
+    position:absolute;
+}
+
+.hero img{
+    margin:7% auto;
+    z-index:3;
+    width:20%;    
+    display:block;
+    position: relative;    
+}
+
+.top-bar ul{
+    background:none;
+    color:white;
+}
+
+li.menu-text{
+    a{
+        margin:0;
+        padding:0;
+    }
+    font-size:1.5em;
+    border-right:1px solid #ffffff;
+    font-weight:200;
+}
+
+.menu li a {
+    color:#ffffff;
+    font-size:1.1em;
+}
+
+.content{
+    display:block;
+    position:relative;
+    top:620px;
+    z-index:90;
+    background:white;
+}
+
+#content{
+    padding-top:10px;
+    @include breakpoint(medium){
+      padding-top:100px;
+    }
+}
