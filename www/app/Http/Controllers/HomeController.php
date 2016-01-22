@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace PalmerPress\Http\Controllers;
 
-use App\Http\Requests;
+use PalmerPress\Http\Requests;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller

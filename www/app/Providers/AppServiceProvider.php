@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace PalmerPress\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
