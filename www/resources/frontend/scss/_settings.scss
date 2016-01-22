@@ -46,16 +46,20 @@
 $global-width: rem-calc(1200);
 $global-font-size: 100%;
 $global-lineheight: 1.5;
-$primary-color: #2199e8;
-$secondary-color: #042640;
+$primary-color: #1ab188;
+$secondary-color: #a0b3b0;
+
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
+
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+$black: rgba(19, 35, 47, 1);
+$white: #d4d0cd;
+
+
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;

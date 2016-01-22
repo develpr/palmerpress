@@ -70,13 +70,23 @@
     width:100%;
     position:absolute;
 }
-
+video::-webkit-media-controls {
+    display: none;
+}
 .hero img{
-    margin:7% auto;
+    margin:8% auto 0 auto;
     z-index:3;
     width:20%;    
     display:block;
-    position: relative;    
+    position: relative;
+    @include breakpoint(medium down){
+        margin:13% auto 0 auto;
+        width:17%;
+    }
+    @include breakpoint(small down){
+        margin:15% auto 0 auto;
+        width:15%;
+    }
 }
 
 .top-bar ul{
@@ -113,3 +123,6 @@ li.menu-text{
       padding-top:100px;
     }
 }
+
+
+@import 'auth';

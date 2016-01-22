@@ -20,7 +20,8 @@ gulp.task('scripts', function() {
   return gulp.src([
         config.bowerDirectory + '/jquery/dist/jquery.min.js',
         config.bowerDirectory + '/foundation-sites/dist/foundation.min.js',
-        './js/app.js'
+        './js/app.js',
+        './js/auth.js'
       ])
       .pipe(concat('app.js'))
        .pipe(uglify())

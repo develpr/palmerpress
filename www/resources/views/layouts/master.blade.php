@@ -34,6 +34,7 @@
 </div>
 
 <div class="main" id="content">
+    @yield('hero')
     @yield('content')
 </div>
 
