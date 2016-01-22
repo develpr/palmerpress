@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace PalmerPress\Persistence;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAssetsTable extends Migration
+class CreateClassifiedsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,17 +12,14 @@ class CreateAssetsTable extends Migration
      */
     public function up()
     {
-        Schema::create('assets', function (Blueprint $table) {
+        Schema::create('classifieds', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
 //            $table->foreign('user_id')->references('id')->on('users');
-            $table->integer('article_id')->unsigned();
-//            $table->foreign('article_id')->references('id')->on('articles');
-            $table->string("path");
-            $table->string('type');
-            $table->string("name")->nullable();
-            $table->text("description")->nullable();
-            $table->softDeletes();
+            $table->integer('issue_id')->unsigned();
+//            $table->foreign('issue_id')->references('id')->on('issues');
+            $table->integer('classified_section_id')->unsigned();
+//            $table->foreign('classified_section_id')->references('id')->on('classified_sections');
             $table->timestamps();
         });
     }
@@ -34,6 +31,6 @@ class CreateAssetsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('assets');
+        Schema::drop('classifieds');
     }
 }
