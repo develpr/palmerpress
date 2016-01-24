@@ -16,6 +16,7 @@
 
 #auth-forms{
   background:$black;
+
   padding: 40px;
   max-width: 600px;
   margin: 40px auto;
@@ -27,6 +28,10 @@
 
   input{
     color:#000;
+  }
+
+  label{
+    color:$white;
   }
 
   ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -55,6 +60,10 @@
   }
 }
 
+input:checked ~ .switch-paddle {
+  background: $third-color;
+}
+
 .switch-paddle{
-  background:$secondary-color;
+  background: $primary-color;
 }

@@ -4,7 +4,6 @@
 <div class="container">
     <div class="row">
         <div id="auth-forms" class="large-6 small-12 float-center">
-
                 <div class="large-9 small-12 float-center form-selector">
                     <div class="large-4 small-4 columns option signin">Sign In</div>
                     <div class="switch small small-3 large-4 columns">
@@ -36,9 +35,9 @@
 
                     </div>
 
-                    <fieldset class="large-12 columns">
+                    <div class="large-12 columns">
                         <input id="remember" type="checkbox"><label for="remember">Remember Me</label>
-                    </fieldset>
+                    </div>
 
                     <div class="large-12 columns">
                         <button type="submit" class="button float-center large-12 small-12">Sign In</button>
