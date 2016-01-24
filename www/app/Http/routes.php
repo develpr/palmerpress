@@ -24,6 +24,7 @@
 
 Route::group(['middleware' => ['web']], function () {
     Route::get('/', 'HomeController@index');
+    Route::get('/sign-in', 'Auth\AuthController@showLoginForm');
 });
 
 Route::group(['middleware' => 'web'], function () {

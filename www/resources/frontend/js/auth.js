@@ -19,4 +19,12 @@ var authTools = {
 
 $(function(){
     $("#formSelect").on('change', authTools.switchForm);
+    if($("#form-signin").data('last')){
+        $("#formSelect").prop('checked', false).trigger('change');
+    }else{
+        $("#formSelect").prop('checked', true).trigger('change');
+    }
+
+    $("#auth-forms").show();
+
 });

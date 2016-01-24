@@ -5,9 +5,11 @@ namespace PalmerPress\Http\Controllers\Auth;
 use Illuminate\Http\Request;
 use PalmerPress\Persistence\User;
 use Validator;
+use Illuminate\Support\Facades\Auth;
 use PalmerPress\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Session\Store as Session;
 
 class AuthController extends Controller
 {
@@ -47,8 +49,10 @@ class AuthController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function login(Request $request)
+    public function login(Request $request, Session $session)
     {
+        $session->flash("authRoute", 'login');
+
         $this->validate($request, [
             $this->loginUsername() => 'required', 'password' => 'required',
         ]);
@@ -87,8 +91,9 @@ class AuthController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function register(Request $request)
+    public function register(Request $request, Session $session)
     {
+        $session->flash("authRoute", 'register');
         $validator = $this->validator($request->all());
 
         if ($validator->fails()) {

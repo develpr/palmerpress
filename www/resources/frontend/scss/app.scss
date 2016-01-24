@@ -81,11 +81,11 @@ video::-webkit-media-controls {
     position: relative;
     @include breakpoint(medium down){
         margin:13% auto 0 auto;
-        width:17%;
+        width:13%;
     }
     @include breakpoint(small down){
         margin:15% auto 0 auto;
-        width:15%;
+        width:13%;
     }
 }
 

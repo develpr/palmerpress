@@ -3748,11 +3748,11 @@ video::-webkit-media-controls {
   @media screen and (max-width: 63.9375em) {
     .hero img {
       margin: 13% auto 0 auto;
-      width: 17%; } }
+      width: 13%; } }
   @media screen and (max-width: 39.9375em) {
     .hero img {
       margin: 15% auto 0 auto;
-      width: 15%; } }
+      width: 13%; } }
 
 .top-bar ul {
   background: none;
@@ -4148,15 +4148,7 @@ body.is-reveal-open {
   transition-duration: 500ms;
   transition-timing-function: linear; }
 
-.form-selector .option {
-  font-size: 1.2em;
-  opacity: .2; }
-
-.form-selector .option.selected {
-  font-weight: bold;
-  opacity: 1; }
-
-#auth-forms {
+.pp-form {
   background: #13232f;
   padding: 40px;
   max-width: 600px;
@@ -4164,32 +4156,52 @@ body.is-reveal-open {
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
   color: #ffffff; }
-  #auth-forms input {
+  .pp-form input {
     color: #000; }
-  #auth-forms label {
+  .pp-form label {
     color: #d4d0cd; }
-  #auth-forms ::-webkit-input-placeholder {
+  .pp-form ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
     color: #000; }
-  #auth-forms :-moz-placeholder {
+  .pp-form :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
     color: #000;
     opacity: 1; }
-  #auth-forms ::-moz-placeholder {
+  .pp-form ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
     color: #000;
     opacity: 1; }
-  #auth-forms :-ms-input-placeholder {
+  .pp-form :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #000; }
-  #auth-forms :placeholder-shown {
+  .pp-form :placeholder-shown {
     /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
     color: #000; }
+  .pp-form .is-invalid-input:not(:focus) {
+    background: #ec5840; }
   @media screen and (max-width: 39.9375em) {
-    #auth-forms {
+    .pp-form {
       padding: 1em 0;
       border-radius: 0;
       margin: 0; } }
+
+.form-selector .option {
+  font-size: 1.2em;
+  opacity: .35;
+  text-align: center; }
+
+.form-selector .signin {
+  text-align: right; }
+
+.form-selector .register {
+  text-align: left; }
+
+.form-selector .option.selected {
+  font-weight: bold;
+  opacity: 1; }
+
+.switch {
+  text-align: center; }
 
 input:checked ~ .switch-paddle {
   background: #9470b1; }

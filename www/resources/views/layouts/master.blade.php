@@ -22,12 +22,17 @@
     </div>
     <div class="top-bar-right">
         <ul class="menu" data-dropdown-menu>
-            <li><a href="#">Latest</a></li>
-            @if(Auth::check());
+            <li><a href="/latest">Latest Issue</a></li>
+            @if(Auth::check())
+                @if(Auth::user()->email == "shoelessone@gmail.com")
+                    <li><a href="/issues">Issues</a></li>
+                @endif
+                <li><a href="/articles">Articles</a></li>
+                <li><a href="/classifieds">Classifieds</a></li>
+                {{--<li><a href="/ads">ads</a></li>--}}
                 <li><a href="/logout">Log Out</a></li>
             @else
-                <li><a href="/login">Log In</a></li>
-                <li><a href="/register">Register</a></li>
+                <li><a href="/sign-in">Sign In / Register</a></li>
             @endif
         </ul>
     </div>

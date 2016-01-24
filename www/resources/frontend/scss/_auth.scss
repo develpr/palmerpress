@@ -4,17 +4,7 @@
 @import 'foundation';
 @import 'motion-ui';
 
-.form-selector .option{
-  font-size:1.2em;
-  opacity:.2;
-}
-
-.form-selector .option.selected{
-  font-weight:bold;
-  opacity:1;
-}
-
-#auth-forms{
+.pp-form{
   background:$black;
 
   padding: 40px;
@@ -52,12 +42,38 @@
     color:    #000;
   }
 
+  .is-invalid-input:not(:focus){
+    background: $alert-color;
+  }
+
 
   @include breakpoint(small down){
     padding:1em 0;
     border-radius:0;
     margin:0;
   }
+}
+
+.form-selector .option{
+  font-size:1.2em;
+  opacity:.35;
+  text-align:center;
+}
+
+.form-selector .signin{
+  text-align:right;
+}
+
+.form-selector .register{
+  text-align:left;
+}
+.form-selector .option.selected{
+  font-weight:bold;
+  opacity:1;
+}
+
+.switch{
+  text-align:center;
 }
 
 input:checked ~ .switch-paddle {
@@ -67,3 +83,5 @@ input:checked ~ .switch-paddle {
 .switch-paddle{
   background: $primary-color;
 }
+
+
